@@ -1,0 +1,144 @@
+body {
+	background-color: tomato;
+	font-family:  sans-serif;
+	display: flex;
+	font-weight: bold;
+	justify-content: center;
+	margin: 0;
+	padding: 0;
+}
+
+#box {
+	background-color: tomato;
+	width: 70vw;
+	margin:  2vh auto;
+	top: 2vh;
+	left: 10vw;
+	right: 10vw;
+	padding: 1vw;
+	border-radius: 5vw;
+}
+#title {
+	background: white;
+	border-radius: 5vw;
+	text-align: center;
+	color: black;
+	font-size: 6vh;
+}
+#opt1,#opt2 {
+	cursor: pointer;
+}
+#opt1:hover,#opt2:hover {
+	color: tomato;
+}
+
+.status-action,.player1,.player2 {
+	background: white;
+	margin-top: 1vw;
+	margin-bottom: 0.6vw;
+	font-size: 3.3vh;
+	display: flex;
+	border-radius: 5vw;
+	justify-content: space-around;
+}
+.reset {
+	cursor: pointer;
+	color:  black;
+	font-size: 4.4vh;
+	margin-top: 1.3vw;
+	margin-bottom: 1vw;
+}
+.reset:hover{
+	color: tomato;
+}
+.gamegrid{
+	background: #a23f2d;
+	width: 39vh;
+	height: 39vh;
+	margin: 2vw auto;
+	justify-content: center;
+	display: grid;
+	grid-template-columns: repeat(3,1fr);
+	grid-template-rows: repeat(3,1fr);
+	column-gap: 2vh;
+	row-gap: 2vh;
+}
+.cell{
+	height: 11.7vh;
+	width:  11.7vh;
+
+	display:  flex;
+	background: tomato;
+	cursor: pointer;
+	justify-content: center;
+	align-items: center;
+}
+.cell:hover{
+	background: #a23f2d;
+}
+
+
+.x::after,#X,#O{
+	content: '  x';
+	font-size: 10vh;
+	color:  black;
+	cursor: pointer;
+}
+#X:hover,#O:hover{
+	color: tomato;
+}
+
+
+.o::after,#O{
+	content: '  o';
+	font-size: 10vh;
+    color: black;
+    cursor: pointer;
+}
+.won::after{
+	color: white;
+}
+
+
+/* The Modal (background) */
+.modal,.modal1,.modal2 {
+	justify-content: center;
+	text-align: center;
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  top: 2vh;
+  background-color: #fefefe;
+  font-size: 6vh;
+  opacity: 90%;
+  padding: 1vw;
+  border-radius: 2vw;
+  border: 1.2vw solid black;
+  width: 84vw;
+  height: 85vh;
+  max-height: 85vh;
+  /* Could be more or less, depending on screen size */
+  left: 8vw;
+  right:  8vw;
+  
+}
+.modal1{
+	display: block;
+	opacity: 100%;
+}
+.modal2{
+	opacity: 100%;
+}
+
+.stat{
+	color: black;
+	font-size: 6vh;
+}
+.finreset{
+	color: black;
+	font-size: 5.5vh;
+	cursor: pointer;
+}
+.finreset:hover{
+	color: tomato;
+}
